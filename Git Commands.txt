@@ -1,0 +1,95 @@
+Git Commands:
+
+INITIAL SETUP:
+
+1) git config --global user.name “[firstname lastname]”
+2)git config --global user.email “[valid-email]”
+
+
+
+SETUP & INIT:
+
+1)git init
+2)git clone [url]
+For cloning GitHub repository to local machine 
+ 
+
+
+GIT STAGING:
+1)git status
+2)git add [file] 
+3)git commit -m “[descriptive message]”
+
+
+
+SHARE & UPDATE
+Retrieving updates from another repository and updating local repo  to push code to github
+
+1)git remote add [alias] [url]
+add a git URL as an alias
+2)git fetch [alias]
+fetch down all the branches from that Git remote
+3)git merge [alias]/[branch]
+merge a remote branch into your current branch to bring it up to date
+4)git push -u [alias] [branch]
+Transmit local branch commits to the remote repository branch
+-u indicates same branch commit every time
+5)git pull
+fetch and merge any commits from the tracking remote branch
+PUSH VS  PULL
+
+
+GIT IGNORE --->when we are pushing code to local repository to cloud repository we have to ignore some files like env variables 
+
+INSPECT & COMPARE:
+1)git log
+show the commit history for the currently active branch
+2)git log branch B..branch A
+show the commits on branch A that are not on branch B
+3)git log --follow [file]
+show the commits that changed file, even across renames
+4)git diff branch B...branch A
+show the diff of what is in branch A that is not in branch B
+5)git show [SHA]
+show any object in Git in human-readable format
+
+
+GIT PREVIOUS  VERSION CODE:(git checkout commit_id)
+1)BY COMMIT ID 
+2)WE CAN GO TO VERSIONING CODE
+
+
+GIT REVERT VS GIT RESET:
+1)BY COMMIT IS WE CAN REVERT THE COMMIT WHAT WE HAVE DONE 
+GET REVERT COMMIT_ID
+GET REVERT HEAD 
+HEAD MEANS  IT POINTS THE RECENT COMMIT
+GIT REVERT <COMMIT_ID> <COMMIT_ID_2> <COMMIT_ID_3>()ANY COMMITS)
+
+
+GIT RESET:
+git reset commit_id
+
+ 
+git reset --soft [commit_id]
+all commits will be deleted  after this commit _idbut they will be there in stagging are and code didn't change
+commit history will be deleted
+
+git reset --hard [commit]
+all code and history  will be deleted after this commit_id our header point will move to before commit_its we reset
+code and commit history will be deleted.
+
+
+GIT BRANCHES:
+
+GIT BRANCH
+GIT BRANCH <BRANCHNAME>
+GIT CHECKOUT<BRANCHNAME>
+GIT BRANCH<BRANCHNAME> -b dev 
+GIT MERGE<BRANCH_NAME>
+GIT BRANCH -d <branchname>
+
+
+
+
+ 
